@@ -49,16 +49,13 @@ Thumbs.db
 tmp/
 temp/
 
-# Backend specific - uploaded files
+# Backend specific - uploaded files (but allow .gitkeep)
 backend/src/uploads/*
+!backend/src/uploads/.gitkeep
 backend/uploads/*
+!backend/uploads/.gitkeep
 uploads/*
 !uploads/.gitkeep
-*.webp
-*.jpg
-*.jpeg  
-*.png
-*.gif
 
 # Frontend specific
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
@@ -103,11 +100,10 @@ coverage/
 # Nuxt.js build / generate output
 .nuxt
 
-# Gatsby files
+# Gatsby files  
 .cache/
-public
-
-# Storybook build outputs
+# public - commented out to allow React public folder
+# Note: React apps need their public/index.html file outputs
 .out
 .storybook-out
 
