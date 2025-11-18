@@ -11,7 +11,7 @@ export const config = {
   // CORS Configuration - Dynamic based on environment
   FRONTEND_URL: process.env.FRONTEND_URL || 
     (process.env.NODE_ENV === 'production' 
-      ? 'https://your-frontend-domain.com' 
+      ? 'https://portfolio-management-d143.vercel.app' 
       : 'http://localhost:3000'),
   
   // File Upload Configuration
@@ -28,7 +28,7 @@ export const config = {
   // Backend URL for image URLs - Dynamic based on environment
   BACKEND_URL: process.env.BACKEND_URL || 
     (process.env.NODE_ENV === 'production' 
-      ? 'https://your-backend-domain.com' 
+      ? 'https://portfolio-management-production.up.railway.app' 
       : 'http://localhost:5000'),
 } as const;
 
