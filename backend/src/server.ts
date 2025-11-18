@@ -42,6 +42,11 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads'), {
   }
 }));
 
+app.get('/uploads/*', (req, res) => {
+  const placeholderUrl = 'https://via.placeholder.com/450x350/4f46e5/ffffff?text=Portfolio+Image';
+  res.redirect(placeholderUrl);
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({
